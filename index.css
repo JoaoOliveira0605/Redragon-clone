@@ -1,0 +1,769 @@
+/* Reset css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Variables */
+
+:root {
+  --red: #da2d2d;
+  --black: #131313;
+}
+
+/*Header*/
+
+header {
+  width: 100%;
+  background: var(--black);
+}
+
+.menu {
+  width: 100%;
+  height: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu img {
+  width: 12%;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.menu-search input {
+  height: 2.5rem;
+  width: 29rem;
+  color: rgba(255, 255, 255, 0.658);
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  margin-left: 10rem;
+  background-color: var(--black);
+  border: 0.2px solid rgb(224, 14, 49);
+}
+
+nav {
+  margin-right: 5rem;
+}
+
+nav a {
+  color: rgba(255, 255, 255, 0.61);
+  text-decoration: none;
+  padding-right: 1.5rem;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: var(--red);
+  transition: 0.21s ease-in;
+}
+
+/*Main*/
+
+.zeus-content {
+  position: relative;
+  height: 40rem;
+  background: url(./assets/bestami-sarikaya-NIbG6HDkQRI-unsplash.jpg) no-repeat;
+}
+
+.zeus-section {
+  position: absolute;
+  top: 10rem;
+  left: 15rem;
+  color: white;
+}
+
+.zeus-section h1 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.zeus-section p {
+  font-weight: 300;
+  text-align: center;
+}
+
+.logo {
+  height: 10rem;
+}
+
+.zeus-section button {
+  margin: 15px;
+  padding: 15px 55px;
+
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+
+  background: rgb(17, 0, 3);
+  background: linear-gradient(
+    90deg,
+    rgba(128, 15, 36, 0.561) 0%,
+    rgba(121, 9, 9, 1) 18%,
+    rgba(121, 9, 9, 1) 86%,
+    rgba(128, 15, 36, 0.561) 100%
+  );
+  border-radius: 15px;
+  transition: 0.25s ease-out;
+}
+
+.zeus-section button:hover {
+  transition: 0.2s ease-in;
+  padding: 20px 60px;
+  border-radius: 20px;
+}
+
+/* Products */
+
+.product-section {
+  background: var(--black);
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  height: 40.7rem;
+}
+
+.product-image img {
+  height: 60%;
+}
+
+.products {
+  margin: 14rem 0 0 2rem;
+}
+.products h2 {
+  color: rgba(255, 255, 255, 0.849);
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.products p {
+  color: rgba(255, 255, 255, 0.849);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.products button {
+  padding: 8px 70px;
+  margin-top: 15px;
+  font-size: 1rem;
+  background-color: red;
+  color: white;
+  font-weight: 300;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.products button:hover {
+  background-color: rgb(133, 105, 105);
+  color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+.network-section {
+  width: 100%;
+  background: url(./assets/mossawi_398536624219_20180129164136_424028184726.png)
+    no-repeat;
+  background-size: 120rem;
+  background-position: center;
+  height: 20rem;
+}
+
+.network-content {
+  text-align: center;
+  color: white;
+}
+.network-content h3 {
+  padding-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.network-content p {
+  font-weight: 300;
+  color: rgba(250, 250, 250, 0.692);
+}
+
+.network-content button {
+  background-color: rgba(29, 29, 29, 0.534);
+  color: cyan;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.network-content button span {
+  color: white;
+}
+.network-content button:hover {
+  padding: 1.4rem;
+}
+
+.about-section {
+  text-align: center;
+  height: 25rem;
+  margin-top: 10rem;
+  font-weight: 300;
+}
+
+.about-section p {
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.about-section img {
+  filter: grayscale(100%);
+}
+
+hr.solid {
+  border-top: 1px solid var(--red);
+}
+
+hr.solid-blue {
+  border-top: 1px solid cyan;
+}
+
+.contact-section {
+  padding-top: 2.5rem;
+  width: 100%;
+  height: 10rem;
+  background-color: rgb(224, 14, 49);
+}
+
+.left-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.left-footer img {
+  margin-top: 0.8rem;
+  height: 5rem;
+
+  filter: grayscale(200%);
+}
+
+.left-footer a,
+.left-footer span {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.849);
+  transition: 0.4s;
+}
+
+.left-footer span {
+  margin-left: 5rem;
+}
+
+.left-footer a:hover {
+  transition: 0.2s;
+  color: rgba(0, 0, 0, 0.699);
+}
+
+/*Media query*/
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  /*Header*/
+
+  header {
+    width: 100%;
+    background: var(--black);
+  }
+
+  .menu {
+    width: 100%;
+    height: 5.5rem;
+  }
+
+  .menu img {
+    width: 60%;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .menu-search input {
+    display: none;
+    height: 2.5rem;
+    width: 29rem;
+    color: rgba(255, 255, 255, 0.658);
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-left: 3rem;
+    background-color: var(--black);
+    border: 0.2px solid rgb(224, 14, 49);
+  }
+
+  nav {
+    display: none;
+    margin-right: 5rem;
+  }
+
+  /*Main*/
+
+  .zeus-content {
+    position: relative;
+    height: 40rem;
+    background: url(./assets/bestami-sarikaya-NIbG6HDkQRI-unsplash.jpg)
+      no-repeat;
+  }
+
+  .zeus-section {
+    position: absolute;
+    top: 10rem;
+    left: 6rem;
+    color: white;
+  }
+
+  .zeus-section h1 {
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .zeus-section p {
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .logo {
+    height: 10rem;
+  }
+
+  .zeus-section button {
+    margin: 15px;
+    padding: 15px 55px;
+
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+
+    background: rgb(17, 0, 3);
+    background: linear-gradient(
+      90deg,
+      rgba(128, 15, 36, 0.561) 0%,
+      rgba(121, 9, 9, 1) 18%,
+      rgba(121, 9, 9, 1) 86%,
+      rgba(128, 15, 36, 0.561) 100%
+    );
+    border-radius: 15px;
+    transition: 0.25s ease-out;
+  }
+
+  .zeus-section button:hover {
+    transition: 0.2s ease-in;
+    padding: 20px 60px;
+    border-radius: 20px;
+  }
+
+  /* Products */
+
+  .product-section {
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 40.7rem;
+  }
+
+  .product-image img {
+    height: 120%;
+    width: 100%;
+  }
+  .products {
+    margin: auto;
+    width: 100%;
+  }
+
+  .products h2 {
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+
+  .products p {
+    color: rgba(255, 255, 255, 0.849);
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .products button {
+    padding: 8px 70px;
+    margin-top: 15px;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    font-weight: 300;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .products button:hover {
+    background-color: rgb(133, 105, 105);
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+  }
+  /* net*/
+  .network-section {
+    width: 100%;
+    background: url(./assets/mossawi_398536624219_20180129164136_424028184726.png)
+      no-repeat;
+    background-size: cover;
+    height: 24rem;
+  }
+
+  .network-content {
+    text-align: center;
+    color: white;
+  }
+  .network-content h3 {
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  .network-content p {
+    font-weight: 300;
+    color: rgba(250, 250, 250, 0.692);
+  }
+
+  .network-content button {
+    background-color: rgba(29, 29, 29, 0.534);
+    color: cyan;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .network-content button span {
+    color: white;
+  }
+  .network-content button:hover {
+    padding: 1.4rem;
+  }
+  /*About*/
+
+  .about-section {
+    text-align: center;
+    height: 25rem;
+    margin-top: 2rem;
+    font-weight: 300;
+  }
+
+  .about-section p {
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.61);
+  }
+
+  .about-section img {
+    filter: grayscale(100%);
+  }
+
+  hr.solid {
+    border-top: 1px solid var(--red);
+  }
+
+  hr.solid-blue {
+    border-top: 1px solid cyan;
+  }
+
+  .contact-section {
+    padding-top: 2.5rem;
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(224, 14, 49);
+  }
+
+  .left-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-footer img {
+    margin-top: 0.8rem;
+    height: 5rem;
+
+    filter: grayscale(200%);
+  }
+
+  .left-footer a,
+  .left-footer span {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.849);
+    transition: 0.4s;
+  }
+
+  .left-footer span {
+    margin-left: 3rem;
+  }
+
+  .left-footer a:hover {
+    transition: 0.2s;
+    color: rgba(0, 0, 0, 0.699);
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  /*Header*/
+
+  header {
+    width: 100%;
+    background: var(--black);
+  }
+
+  .menu {
+    width: 100%;
+    height: 5.5rem;
+  }
+
+  .menu img {
+    width: 60%;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .menu-search input {
+    display: none;
+    height: 2.5rem;
+    width: 29rem;
+    color: rgba(255, 255, 255, 0.658);
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-left: 3rem;
+    background-color: var(--black);
+    border: 0.2px solid rgb(224, 14, 49);
+  }
+
+  nav {
+    display: none;
+    margin-right: 5rem;
+  }
+
+  /*Main*/
+
+  .zeus-content {
+    position: relative;
+    height: 40rem;
+    background: url(./assets/bestami-sarikaya-NIbG6HDkQRI-unsplash.jpg)
+      no-repeat;
+  }
+
+  .zeus-section {
+    position: absolute;
+    top: 10rem;
+    left: 6rem;
+    color: white;
+  }
+
+  .zeus-section h1 {
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .zeus-section p {
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .logo {
+    height: 10rem;
+  }
+
+  .zeus-section button {
+    margin: 15px;
+    padding: 15px 55px;
+
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+
+    background: rgb(17, 0, 3);
+    background: linear-gradient(
+      90deg,
+      rgba(128, 15, 36, 0.561) 0%,
+      rgba(121, 9, 9, 1) 18%,
+      rgba(121, 9, 9, 1) 86%,
+      rgba(128, 15, 36, 0.561) 100%
+    );
+    border-radius: 15px;
+    transition: 0.25s ease-out;
+  }
+
+  .zeus-section button:hover {
+    transition: 0.2s ease-in;
+    padding: 20px 60px;
+    border-radius: 20px;
+  }
+
+  /* Products */
+
+  .product-section {
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 40.7rem;
+  }
+
+  .product-image img {
+    height: 120%;
+    width: 100%;
+  }
+  .products {
+    margin: auto;
+    width: 100%;
+  }
+
+  .products h2 {
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+
+  .products p {
+    color: rgba(255, 255, 255, 0.849);
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .products button {
+    padding: 8px 70px;
+    margin-top: 15px;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    font-weight: 300;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .products button:hover {
+    background-color: rgb(133, 105, 105);
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+  }
+  /* net*/
+  .network-section {
+    width: 100%;
+    background: url(./assets/mossawi_398536624219_20180129164136_424028184726.png)
+      no-repeat;
+    background-size: cover;
+    height: 24rem;
+  }
+
+  .network-content {
+    text-align: center;
+    color: white;
+  }
+  .network-content h3 {
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  .network-content p {
+    font-weight: 300;
+    color: rgba(250, 250, 250, 0.692);
+  }
+
+  .network-content button {
+    background-color: rgba(29, 29, 29, 0.534);
+    color: cyan;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .network-content button span {
+    color: white;
+  }
+  .network-content button:hover {
+    padding: 1.4rem;
+  }
+  /*About*/
+
+  .about-section {
+    text-align: center;
+    height: 25rem;
+    margin-top: 2rem;
+    font-weight: 300;
+  }
+
+  .about-section p {
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.61);
+  }
+
+  .about-section img {
+    filter: grayscale(100%);
+  }
+
+  .contact-section {
+    padding-top: 2.5rem;
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(224, 14, 49);
+  }
+
+  .left-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-footer img {
+    margin-top: 0.8rem;
+    height: 3rem;
+
+    filter: grayscale(200%);
+  }
+
+  .left-footer a,
+  .left-footer span {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.849);
+    transition: 0.4s;
+  }
+
+  .left-footer span {
+    margin-left: 0rem;
+  }
+
+  .left-footer a:hover {
+    transition: 0.2s;
+    color: rgba(0, 0, 0, 0.699);
+  }
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .products h2 {
+    font-size: 3rem;
+  }
+}
